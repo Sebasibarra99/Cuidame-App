@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    android:padding="10dp">
+
+    <!-- Encabezado superior -->
+
+    <!-- Botón volver -->
+
+    <!-- Lista de reportes -->
+
+    <TextView
+        android:id="@+id/tvTituloReportes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="📋 Reportes del Usuario"
+        android:textColor="#2E7D32"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/verde_claro"
+        android:fontFamily="sans-serif"
+        android:text="← Volver"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerReportes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnVolver"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/layoutVacio"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@id/btnVolver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivIlustracionVacia"
+            android:layout_width="280dp"
+            android:layout_height="400dp"
+            android:src="@drawable/anciano_esperando"
+            android:contentDescription="Sin reportes" />
+
+        <TextView
+            android:id="@+id/tvTextoVacio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aquí aparecerán los reportes cuando el usuario marque sus medicamentos como tomados"
+            android:textSize="16sp"
+            android:textColor="#777"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

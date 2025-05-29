@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Contenido principal con barra de herramientas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar superior -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/verde_claro"
+            android:title="Cuidador"
+            android:titleTextColor="@android:color/white"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+        <!-- Área para mostrar contenido (Fragmentos o actividades) -->
+        <FrameLayout
+            android:id="@+id/contenedorFragmento"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="56dp"/>
+
+    </LinearLayout>
+
+    <!-- Navigation Drawer lateral -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        app:menu="@menu/menu_cuidador"
+        app:headerLayout="@layout/nav_header" />
+</androidx.drawerlayout.widget.DrawerLayout>

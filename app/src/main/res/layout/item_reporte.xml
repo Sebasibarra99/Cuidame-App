@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvMedicamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicamento: Paracetamol"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hora: 08:00 AM"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha: 20/05/2025"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="El usuario tomó su medicamento"
+            android:textColor="#555"
+            android:layout_marginTop="6dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="6dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/verde_claro">
+
+        <!-- Imagen -->
+        <ImageView
+            android:id="@+id/ivFotoMedicamento"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_medicamento" />
+
+        <!-- Nombre -->
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del medicamento"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#333"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Hora -->
+        <TextView
+            android:id="@+id/tvHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora: 08:00 AM"
+            android:textColor="#555"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Instrucciones -->
+        <TextView
+            android:id="@+id/tvInstrucciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomar con agua"
+            android:textColor="#555"
+            android:layout_marginTop="2dp"/>
+
+        <!-- Botones de acción -->
+        <LinearLayout
+            android:id="@+id/contenedorBotones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnTomado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="✔ Sí tomé"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/green"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnNoTomado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="❌ No tomé"
+                android:textAllCaps="false"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Cuidame</string>
+    <string name="default_web_client_id">756126688746-07j2qj5skt3h6bufpqi49kfeugbrr6br.apps.googleusercontent.com</string>
+
+    <string name="item_perfil">Medicamentos</string>
+    <string name="item_usuario">Ubicacion</string>
+    <string name="item_chats">Emergencia</string>
+
+    <string name="tv_tittle">Titulo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="opcionEmail">Continuar con Email</string>
+    <string name="opcionGoogle">Continuar con google</string>
+
+    <string name="txt_login">Login</string>
+    <string name="et_Email">Correo electronico</string>
+    <string name="et_password">Contrasena</string>
+    <string name="btn_Ingresar">Ingresar</string>
+    <string name="txt_no_tienes_cuenta">No tienes una cuenta</string>
+    <string name="tv_registrarme">Registrarme</string>
+
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+
+
+    <string name="tv_recuperar_cuenta">Olvidaste la conrtasena? <b>Recuperar</b></string>
+
+    <string name="txt_registro">Registro</string>
+    <string name="et_nombres">Nombres</string>
+    <string name="et_R_Password">Repita la contrasena</string>
+    <string name="btn_registrar">Registrar</string>
+
+    <string name="btn_ActualizarInfo">Actualizar</string>
+    <string name="btn_CambiarPass">Cambiar contrasena</string>
+    <string name="btn_cerarSesion">Cerrar sesion</string>
+
+    <string name="txt_nombres">Nombres: </string>
+    <string name="tv_nombres"> -- </string>
+    <string name="txt_email">Email: </string>
+    <string name="tv_email"> -- </string>
+    <string name="txt_proveedor">Proveedor: </string>
+    <string name="tv_proveedor"> -- </string>
+    <string name="txt_t_registro">Miembro desde: </string>
+    <string name="tv_t_registro"> -- </string>
+
+    <string name="Txt_olvide_pass">Olvide password</string>
+    <string name="Txt_ingrese_email">Ingrese email para el envio de las instrucciones de recuperacion</string>
+    <string name="btn_enviar">Enviar</string>
+
+    <string name="Txt_cambiar_pass">Cambiar contrasena</string>
+
+    <string name="et_pass_actual">Contrasena actual</string>
+    <string name="et_pass_nueva">Contrasena nueva</string>
+    <string name="et_r_pass_nueva">Repita contrasena nueva</string>
+    <string name="btn_cambiar_password">Cambiar</string>
+
+    <string name="Txt_titulo_edit">Editar informacion</string>
+    <string name="btn_actualizar">Actualizar</string>
+
+    <string name="et_buscar_usuario">Buscar ususario</string>
+
+    <string name="item_uid">uid del usuario</string>
+    <string name="item_nombre">nombre del usuario</string>
+    <string name="item_email">email del usuario</string>
+
+    <string name="txt_nombre_usuario">Nombres</string>
+    <string name="Et_mensaje_chats">Escriba algo</string>
+
+    <string name="Tv_tiempo_mensaje">dd/MM/yyyy hh:mm</string>
+
+    <string name="etBuscar">Buscar</string>
+    <string name="tvFecha">dd/MM/yyyy</string>
+</resources>

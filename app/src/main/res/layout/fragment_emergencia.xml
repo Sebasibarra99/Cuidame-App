@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/imgEmergencia"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/emergencia_ilustracion"
+        android:contentDescription="Ilustración de emergencia"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/tvEmergenciaMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Presiona el botón si necesitas ayuda inmediata"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnEmergencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚨 Enviar Alerta"
+        android:backgroundTint="@color/red"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+</LinearLayout>

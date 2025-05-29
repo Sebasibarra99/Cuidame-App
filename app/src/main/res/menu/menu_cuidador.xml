@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_agregar_medicamento"
+        android:title="💊 Agregar Medicamento" />
+    <item
+        android:id="@+id/nav_reportes"
+        android:title="📝 Ver Reportes"/>
+    <item
+        android:id="@+id/nav_ubicacion_usuario"
+        android:title="Ubicación Usuario" />
+    <item
+        android:id="@+id/nav_alertas"
+        android:title="Alertas de Emergencia"/>
+
+    <item
+        android:id="@+id/nav_salir"
+        android:title="❌ Cerrar Sesión" />
+</menu>
